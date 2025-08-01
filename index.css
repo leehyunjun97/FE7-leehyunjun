@@ -21,26 +21,48 @@
   list-style: none;
 }
 
-/* 메인 페이지 */
-
-main {
-  border-radius: 15px;
-  background-color: var(--box-background-color);
-  width: 500px;
-  text-align: center;
-  margin: 15px auto;
-  padding: 10px;
+header {
+  margin-top: 15px;
 }
 
-main article {
+main {
+  width: max-content;
+  border-radius: 15px;
+  background-color: var(--box-background-color);
+  text-align: center;
+  color: var(--font-color);
+  margin: 15px auto;
+  padding: 15px 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* 메인 페이지 */
+
+.index-main article {
   margin-bottom: 10px;
 }
 
-main article p {
+.index-main article p {
   line-height: 25px;
-  color: var(--font-color);
 }
 
 /* 히스토리 페이지 */
+
+.history-main p {
+  padding: 12px 8px;
+  line-height: 23px;
+}
+
+.history-main p span {
+  color: firebrick;
+}
 
 /* 티엠아이 페이지 */
