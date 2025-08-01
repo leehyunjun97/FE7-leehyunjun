@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'PyeojinGothic-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Bold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --box-background-color: #fdd8a8;
+  --font-color: #363333;
+}
+
+/* 공통 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PyeojinGothic-Bold';
+  text-align: center;
+  list-style: none;
+}
+
+/* 메인 페이지 */
+
+main {
+  border-radius: 15px;
+  background-color: var(--box-background-color);
+  width: 500px;
+  text-align: center;
+  margin: 15px auto;
+  padding: 10px;
+}
+
+main article {
+  margin-bottom: 10px;
+}
+
+main article p {
+  line-height: 25px;
+  color: var(--font-color);
+}
+
+/* 히스토리 페이지 */
+
+/* 티엠아이 페이지 */
