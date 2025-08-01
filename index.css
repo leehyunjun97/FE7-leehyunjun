@@ -58,7 +58,7 @@ a:hover {
 
 .index-main article p span {
   text-decoration: underline;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
 }
 
 /* 히스토리 페이지 */
@@ -80,7 +80,7 @@ a:hover {
 
 .tmi-main table {
   margin: 10px 0;
-  box-shadow: 4px 5px 5px 0px;
+  box-shadow: 2px 3px 5px 0px;
 }
 
 .tmi-main table tr {
