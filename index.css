@@ -76,6 +76,7 @@ a:hover {
 
 .tmi-main table {
   margin: 10px 0;
+  box-shadow: 4px 5px 5px 0px;
 }
 
 .tmi-main table tr {
