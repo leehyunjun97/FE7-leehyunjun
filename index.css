@@ -52,6 +52,7 @@ a:hover {
 
 .index-main article p {
   line-height: 25px;
+  padding: 10px 0;
 }
 
 /* 히스토리 페이지 */
