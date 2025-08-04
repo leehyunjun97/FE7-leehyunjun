@@ -102,11 +102,17 @@ footer > div > li {
 
 /* 히스토리 페이지 */
 
+.history-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .history-main p {
   border-radius: 3px;
   box-shadow: 2px 3px 4px 0px;
   padding: 8px 3px;
-  margin: 15px 8px;
+  margin: 8px 0px;
   background-color: #fffaf3;
   line-height: 23px;
 }
