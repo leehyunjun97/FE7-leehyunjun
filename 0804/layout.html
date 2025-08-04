@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      aside {
+        flex-basis: 300px;
+        flex-grow: 0;
+      }
+      header,
+      footer {
+        width: 100%;
+        height: 50px;
+        background-color: lightpink;
+      }
+      main {
+        background-color: lightgray;
+        flex: 1;
+        height: calc(100vh - 100px);
+      }
+      @media (max-width: 1024px) {
+        aside {
+          flex-basis: 100%;
+        }
+      }
+      .flex-box {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flex-box > div {
+        width: 100px;
+        height: 100px;
+      }
+      .flex-box > div:nth-child(even) {
+        background-color: red;
+      }
+      .flex-box > div:nth-child(odd) {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+
+    <aside>aside</aside>
+    <main>
+      main
+      <div class="flex-box">a</div>
+      <div class="flex-box">b</div>
+      <div class="flex-box">c</div>
+      <div class="flex-box">d</div>
+    </main>
+
+    <footer>footer</footer>
+  </body>
+</html>

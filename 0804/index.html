@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .card {
+        border: 1px black solid;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .card-header {
+        display: flex;
+      }
+      .flex-box {
+        display: flex;
+        width: 100dvw;
+        height: 80dvh;
+        box-sizing: border-box;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .flex-item {
+        /* width: 100px; */
+        /* height: 100px; */
+        width: 100px;
+        font-size: 40px;
+        flex: 1;
+      }
+
+      .red {
+        background-color: red;
+        /* flex-grow: 1; */
+      }
+      .blue {
+        background-color: blue;
+        /* height: 200px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <div style="flex: 1"><span>1</span></div>
+        <p>이현준</p>
+        <div style="flex: 1; display: flex; justify-content: flex-end">
+          <small>회원님</small>
+          <small>회원님</small>
+        </div>
+      </div>
+    </div>
+    <div class="flex-box">
+      <div class="red flex-item"><h1>A</h1></div>
+      <div class="blue flex-item"><h1>B</h1></div>
+      <div class="red flex-item"><h1>C</h1></div>
+      <div class="blue flex-item"><h1>D</h1></div>
+      <div class="red flex-item"><h1>E</h1></div>
+      <div class="blue flex-item"><h1>F</h1></div>
+      <div class="red flex-item"><h1>E</h1></div>
+      <div class="blue flex-item"><h1>F</h1></div>
+    </div>
+  </body>
+</html>

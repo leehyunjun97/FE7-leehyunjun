@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @theme {
+      }
+      .test-class-name {
+        @apply rounded border border-gray-300;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-[68px] aspert-square p-[13px]"></div>
+    <div
+      class="w-24 h-24 bg-black flex justify-between items-center rounded m-10"
+    ></div>
+    <button class="hover:rotate-30 w-24 h-24 bg-red-100 m-10">버튼</button>
+    <h1 class="test-class-name">asd</h1>
+  </body>
+</html>
+ 
