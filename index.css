@@ -21,8 +21,25 @@
   list-style: none;
 }
 
+.container {
+  width: max-content;
+  margin: auto;
+  margin-top: 25px;
+}
+
 header {
-  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+header > nav {
+  display: flex;
+}
+
+header > nav > li {
+  margin-left: 6px;
+  line-height: 27px;
 }
 
 main {
@@ -31,17 +48,39 @@ main {
   background-color: var(--box-background-color);
   text-align: center;
   color: var(--font-color);
-  margin: 15px auto;
   padding: 15px 25px;
 }
 
 a {
   color: var(--font-color);
+  text-decoration: none;
+  line-height: 10px;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: black;
+}
+
+footer {
+  margin-top: 10px;
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+}
+
+footer > div > li {
+  font-size: 0.7rem;
+  margin-right: 5px;
+  opacity: 0.8;
+  font-weight: bold;
+  text-align: left;
+}
+
+.footer-git-logo {
+  width: 50px;
+  cursor: pointer;
 }
 
 /* 메인 페이지 */
